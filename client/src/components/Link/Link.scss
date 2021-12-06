@@ -1,0 +1,12 @@
+@use 'sass/vars';
+
+.Link {
+  color: vars.$theme-secondary;
+
+  &.Link--active,
+  &.Link--external {
+    font-weight: bold;
+  }
+
+  &.Link--external {}
+}

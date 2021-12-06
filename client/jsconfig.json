@@ -1,0 +1,26 @@
+{
+  "paths": {
+    "components/*": ["./src/components/*"],
+    "hooks/*": ["./src/hooks/*"],
+    "pages/*": ["./src/pages/*"],
+    "sass/*": ["./src/sass/*"],
+    "state/*": ["./src/state/*"]
+  },
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "es6",
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "jsx": "react"
+  },
+  "exclude": [
+    "dist",
+    "node_modules",
+    "build",
+    ".vscode",
+    "tmp",
+    ".npm"
+  ]
+}

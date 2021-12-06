@@ -1,0 +1,117 @@
+@use '../vars';
+// @use '../mixins';
+
+// A secondary color provides more ways to accent and distinguish your product.
+// Having a secondary color is optional, and should be applied sparingly to
+// accent select parts of your UI. If you don’t have a secondary color, your
+// primary color can also be used to accent elements.
+//
+// Secondary colors are best for:
+//  - Floating action buttons
+//  - Selection controls, like sliders and switches
+//  - Highlighting selected text
+//  - Progress bars
+//  - Links and headlines
+
+// Surface, background, and error colors typically don’t represent brand:
+//
+// - Surface colors affect surfaces of components, such as cards, sheets,
+//   and menus.
+// - The background color appears behind scrollable content. The baseline
+//   background and surface color is #FFFFFF.
+// - Error color indicates errors in components, such as invalid text in a
+//   text field. The baseline error color is #B00020.
+
+
+.light {
+  --theme-primary: #{vars.$color-neutral-white};
+  --theme-on-primary: #{vars.$color-reentry-orange};
+  --theme-primary-light: #{vars.$color-reentry-orange};
+  --theme-on-primary-light: #{vars.$color-neutral-black};
+  --theme-primary-dark: #{vars.$color-battletech-grey};
+  --theme-on-primary-dark: #{vars.$color-neutral-white};
+
+  --theme-secondary: #{vars.$color-reentry-orange};
+  --theme-on-secondary: #{vars.$color-neutral-black};
+  --theme-secondary-light: #{vars.$color-reentry-orange};
+  --theme-on-secondary-light: #{vars.$color-neutral-black};
+  --theme-secondary-dark: #{vars.$color-reentry-orange};
+  --theme-on-secondary-dark: #{vars.$color-neutral-black};
+
+  --theme-background: #{vars.$color-neutral-white};
+  --theme-on-background: #{vars.$color-neutral-black};
+  --theme-surface: #{vars.$color-neutral-white};
+  --theme-on-surface: #{vars.$color-neutral-black};
+  // --theme-error: #{vars.$color-reentry-orange-dark};
+  // --theme-on-error: #{vars.$color-reentry-orange-dark};
+}
+
+.dark {
+  --theme-primary: #{vars.$color-battletech-grey};
+  --theme-on-primary: #{vars.$color-neutral-white};
+  --theme-primary-light: #{vars.$color-battletech-grey-light};
+  --theme-on-primary-light: #{vars.$color-neutral-black};
+  --theme-primary-dark: #{vars.$color-battletech-grey-dark};
+  --theme-on-primary-dark: #{vars.$color-neutral-white};
+
+  --theme-secondary: #{vars.$color-reentry-orange};
+  --theme-on-secondary: #{vars.$color-neutral-black};
+  --theme-secondary-light: #{vars.$color-reentry-orange-light};
+  --theme-on-secondary-light: #{vars.$color-neutral-black};
+  --theme-secondary-dark: #{vars.$color-reentry-orange-dark};
+  --theme-on-secondary-dark: #{vars.$color-neutral-white};
+
+  --theme-background: #{vars.$color-battletech-grey-light};
+  --theme-on-background: #{vars.$color-neutral-black};
+  --theme-surface: #{vars.$color-battletech-grey-dark};
+  --theme-on-surface: #{vars.$color-neutral-white};
+  // --theme-error: #{vars.$color-reentry-orange-dark};
+  // --theme-on-error: #{vars.$color-reentry-orange-dark};
+}
+
+.orange {
+  --theme-primary: #{vars.$color-reentry-orange};
+  --theme-on-primary: #{vars.$color-neutral-black};
+  --theme-primary-light: #{vars.$color-reentry-orange-light};
+  --theme-on-primary-light: #{vars.$color-neutral-black};
+  --theme-primary-dark: #{vars.$color-reentry-orange-dark};
+  --theme-on-primary-dark: #{vars.$color-neutral-white};
+
+  --theme-secondary: #{vars.$color-battletech-grey};
+  --theme-on-secondary: #{vars.$color-neutral-white};
+  --theme-secondary-light: #{vars.$color-battletech-grey-light};
+  --theme-on-secondary-light: #{vars.$color-neutral-black};
+  --theme-secondary-dark: #{vars.$color-battletech-grey-dark};
+  --theme-on-secondary-dark: #{vars.$color-neutral-white};
+
+  --theme-background: #{vars.$color-neutral-lightest};
+  --theme-on-background: #{vars.$color-neutral-black};
+  --theme-surface: #{vars.$color-neutral-white};
+  --theme-on-surface: #{vars.$color-neutral-black};
+  // --theme-error: #{vars.$color-reentry-orange-dark};
+  // --theme-on-error: #{vars.$color-reentry-orange-dark};
+}
+
+// swap primary/secondary for different focus
+.muiBattleTechGray {
+  --theme-primary: #{vars.$color-battletech-grey};
+  --theme-on-primary: #{vars.$color-neutral-white};
+  --theme-primary-light: #{vars.$color-battletech-grey-light};
+  --theme-on-primary-light: #{vars.$color-neutral-black};
+  --theme-primary-dark: #{vars.$color-battletech-grey-dark};
+  --theme-on-primary-dark: #{vars.$color-neutral-white};
+
+  --theme-secondary: #{vars.$color-reentry-orange};
+  --theme-on-secondary: #{vars.$color-neutral-black};
+  --theme-secondary-light: #{vars.$color-reentry-orange-light};
+  --theme-on-secondary-light: #{vars.$color-neutral-black};
+  --theme-secondary-dark: #{vars.$color-reentry-orange-dark};
+  --theme-on-secondary-dark: #{vars.$color-neutral-white};
+
+  --theme-background: #{vars.$color-neutral-lighter};
+  --theme-on-background: #{vars.$color-neutral-black};
+  --theme-surface: #{vars.$color-neutral-white};
+  --theme-on-surface: #{vars.$color-neutral-black};
+  // --theme-error: #{vars.$color-reentry-orange-dark};
+  // --theme-on-error: #{vars.$color-reentry-orange-dark};
+}

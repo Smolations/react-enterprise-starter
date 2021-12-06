@@ -1,0 +1,9 @@
+// base tokens first
+@forward 'color' as color-*;
+@forward 'font' as font-*;
+@forward 'spacing' as spacing-*;
+@forward 'theme' as theme-*;
+
+// tokens that use base tokens
+@forward 'components/Header' as Header-*;
+@forward 'components/Paragraph' as Paragraph-*;

@@ -1,0 +1,24 @@
+@use 'sass/vars';
+
+.Button {
+  display: block;
+  background-color: vars.$theme-secondary-light;
+  box-shadow: 0 1px 1px 1px vars.$color-neutral-darker;
+  border-radius: 1px;
+  border: 1px solid vars.$theme-secondary-light;
+  color: vars.$theme-on-secondary-light;
+  font-weight: 500;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:active {
+    border: 1px solid vars.$color-neutral-darker;
+    box-shadow: none;
+  }
+
+  + .Button {
+    margin-left: vars.$spacing-margin-small;
+  }
+}

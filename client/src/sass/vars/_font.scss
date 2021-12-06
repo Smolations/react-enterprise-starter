@@ -1,0 +1,32 @@
+$family-mono: 'IBM Plex Mono', monospace;
+$family-sans: 'IBM Plex Sans', sans-serif;
+
+// based on branding (pt)
+// $size-base: 10px; // all other sizes in rem
+// $size-largest: 3.2rem;  // 24pt
+// // $size-uhh: 2.7rem;   // 20pt
+// $size-larger: 2.1rem;    // 16pt
+// $size-large: 1.9rem;   // 14pt
+// $size-normal: 1.6rem;    // 12pt
+// $size-small: 1.4rem; // standard
+// $size-smaller: 1.3rem;  // 10pt
+// $size-smallest: 1.2rem; // 9pt
+
+// conventional design system (based on browser default base font size). using
+// this size also determines the layout grid system.
+$size-base: 16px;
+
+$size-largest: 2.5rem;
+$size-larger: 2rem;
+$size-large: 1.5rem;
+$size-normal: 1rem;
+$size-small: 0.5rem;
+
+// need more time to think about this..
+// $weight-normal: 100;
+// $weight-normal: 200;
+// $weight-normal: 300;
+$weight-normal: 400;
+$weight-bold: 500;
+$weight-bolder: 600;
+$weight-boldest: 700;

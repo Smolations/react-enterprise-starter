@@ -1,0 +1,13 @@
+@use 'sass/vars';
+
+.Nav {
+  .Nav--list {
+    display: flex;
+    margin: 0;
+  }
+
+  .Link {
+    padding: 0 vars.$spacing-padding-small;
+    text-decoration: none;
+  }
+}

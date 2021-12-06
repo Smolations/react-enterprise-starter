@@ -1,0 +1,12 @@
+@use 'sass/vars';
+
+.Paragraph {
+  margin: 0 0 vars.$spacing-margin-huge;
+  font-size: vars.$font-size-normal;
+
+  @each $heading, $size in vars.$Paragraph-under-heading-sizes {
+    &.Paragraph--under-#{$heading} {
+      font-size: $size;
+    }
+  }
+}

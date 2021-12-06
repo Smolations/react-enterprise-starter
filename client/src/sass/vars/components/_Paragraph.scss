@@ -1,0 +1,7 @@
+@use '../font';
+
+$under-heading-sizes: (
+  h2: font.$size-large,
+  h3: font.$size-normal,
+  h4: font.$size-normal,
+);

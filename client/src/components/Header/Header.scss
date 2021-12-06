@@ -1,0 +1,12 @@
+@use 'sass/vars';
+
+.Header {
+  font-family: vars.$font-family-mono;
+
+  @each $heading, $size in vars.$Header-heading-font-sizes {
+    > .Header--heading-#{$heading} {
+      margin: 0 0 vars.$spacing-margin-normal;
+      font-size: $size;
+    }
+  }
+}

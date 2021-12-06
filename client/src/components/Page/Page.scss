@@ -1,0 +1,10 @@
+@use 'sass/vars';
+
+.Page {
+  height: 100%;
+  margin: 0;
+  padding: vars.$spacing-padding-huge;
+
+  background-color: vars.$theme-surface;
+  color: vars.$theme-on-surface;
+}

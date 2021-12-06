@@ -1,0 +1,33 @@
+import { Code } from 'components/Code';
+import { Checkbox } from 'components/Form';
+import { Paragraph } from 'components/Paragraph';
+
+
+MDX component is receiving an array formatted like this:
+<Code block>
+  {`
+    const topics = [
+      { checked: true, topic: 'allow mdx to take props and recognize childrens' },
+      { checked: false, topic: 'get mdx code blocks syntax-highlighted' },
+      { checked: false, topic: <>here's some <Code>code right here</Code>.</> },
+      // ...
+    ];
+    <FooBar baz="7" hey="guys">
+      some text here
+    </FooBar>
+  `}
+</Code>
+
+<Paragraph>
+  {props.children}
+</Paragraph>
+
+<ul>
+  {props.items.map((item, ndx) => (
+    <li key={`.${ndx}`}>
+      <Checkbox checked={item.checked}>
+        {item.topic}
+      </Checkbox>
+    </li>
+  ))}
+</ul>

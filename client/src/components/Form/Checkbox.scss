@@ -1,0 +1,35 @@
+@use 'sass/vars';
+
+.Checkbox {
+  display: inline-flex;
+  align-items: center;
+
+  .Checkbox--input {
+    display: grid;
+    place-content: center;
+    width: vars.$spacing-normal;
+    height: vars.$spacing-normal;
+    margin-right: vars.$spacing-small;
+
+    appearance: none;
+    border-radius: 4px;
+    color: vars.$theme-secondary;
+    font: inherit;
+
+    // could use some work..
+    &::before {
+      content: "";
+      width: 0.5em;
+      height: 0.5em;
+      margin: 0;
+      transform: scale(0);
+      transition: 120ms transform ease-in-out;
+      border-radius: 2px;
+      box-shadow: inset 1em 1em vars.$theme-secondary;
+    }
+
+    &:checked::before {
+      transform: scale(1);
+    }
+  }
+}

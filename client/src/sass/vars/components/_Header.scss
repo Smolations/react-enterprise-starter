@@ -1,0 +1,14 @@
+@use '../font';
+
+// google:
+// h1: accessibility links, invisible
+// h2: 30px
+// h3: 20px
+// h4: 14px  == body
+$heading-font-sizes: (
+  h1: font.$size-normal,
+  h2: font.$size-largest,
+  h3: font.$size-larger,
+  h4: font.$size-large,
+  h5: font.$size-normal,
+);

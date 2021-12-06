@@ -1,0 +1,25 @@
+@use '../vars';
+@use '../mixins';
+
+:export {
+  @include mixins.theme-use(
+    $themePrimary: vars.$color-battletech-grey,
+    $themeOnPrimary: vars.$color-neutral-white,
+    $themePrimaryLight: vars.$color-battletech-grey-light,
+    $themeOnPrimaryLight: vars.$color-neutral-black,
+    $themePrimaryDark: vars.$color-battletech-grey-dark,
+    $themeOnPrimaryDark: vars.$color-neutral-white,
+    $themeSecondary: vars.$color-reentry-orange,
+    $themeOnSecondary: vars.$color-neutral-black,
+    $themeSecondaryLight: vars.$color-reentry-orange-light,
+    $themeOnSecondaryLight: vars.$color-neutral-black,
+    $themeSecondaryDark: vars.$color-reentry-orange-dark,
+    $themeOnSecondaryDark: vars.$color-neutral-white,
+    $themeBackground: vars.$color-battletech-grey-light,
+    $themeOnBackground: vars.$color-neutral-black,
+    $themeSurface: vars.$color-battletech-grey-dark,
+    $themeOnSurface: vars.$color-neutral-white
+    // $themeError: vars.$color-reentry-orange-dark,
+    // $themeOnError: vars.$color-reentry-orange-dark
+  );
+}

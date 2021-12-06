@@ -1,0 +1,40 @@
+
+@mixin use(
+  $themePrimary,
+  $themeOnPrimary,
+  $themePrimaryLight,
+  $themeOnPrimaryLight,
+  $themePrimaryDark,
+  $themeOnPrimaryDark,
+  $themeSecondary,
+  $themeOnSecondary,
+  $themeSecondaryLight,
+  $themeOnSecondaryLight,
+  $themeSecondaryDark,
+  $themeOnSecondaryDark,
+  $themeBackground,
+  $themeOnBackground,
+  $themeSurface,
+  $themeOnSurface
+  // $themeError,
+  // $themeOnError
+) {
+  --theme-primary: #{$themePrimary};
+  --theme-on-primary: #{$themeOnPrimary};
+  --theme-primary-light: #{$themePrimaryLight};
+  --theme-on-primary-light: #{$themeOnPrimaryLight};
+  --theme-primary-dark: #{$themePrimaryDark};
+  --theme-on-primary-dark: #{$themeOnPrimaryDark};
+  --theme-secondary: #{$themeSecondary};
+  --theme-on-secondary: #{$themeOnSecondary};
+  --theme-secondary-light: #{$themeSecondaryLight};
+  --theme-on-secondary-light: #{$themeOnSecondaryLight};
+  --theme-secondary-dark: #{$themeSecondaryDark};
+  --theme-on-secondary-dark: #{$themeOnSecondaryDark};
+  --theme-background: #{$themeBackground};
+  --theme-on-background: #{$themeOnBackground};
+  --theme-surface: #{$themeSurface};
+  --theme-on-surface: #{$themeOnSurface};
+  // --theme-error: #{$themeError};
+  // --theme-on-error: #{$themeOnError};
+}
