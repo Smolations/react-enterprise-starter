@@ -20,14 +20,14 @@ services:
       - ./client:/usr/src/app:cached
       - res-client-node-modules:/usr/src/app/node_modules
 
-  # storybook:
-  #   stdin_open: true
-  #   image: "res-client:next"
-  #   environment:
-  #     - CHOKIDAR_USEPOLLING=true
-  #   command: "npm run storybook"
-  #   ports:
-  #     - "6006:6006"
-  #   volumes:
-  #     - ./client:/usr/src/app:cached
-  #     - res-client-node-modules:/usr/src/app/node_modules
+  storybook:
+    stdin_open: true
+    image: "res-client:next"
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    command: "npm run storybook -- --quiet --ci"
+    ports:
+      - "6006:6006"
+    volumes:
+      - ./client:/usr/src/app:cached
+      - res-client-node-modules:/usr/src/app/node_modules

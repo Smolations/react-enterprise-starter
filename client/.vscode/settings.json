@@ -22,6 +22,9 @@
   "editor.formatOnPaste": true,
   "editor.minimap.showSlider": "always",
   "editor.acceptSuggestionOnEnter": "off",
+  "files.associations": {
+    "*.md": "mdx"
+  },
   "files.enableTrash": false,
   "files.eol": "\n",
   "files.insertFinalNewline": true,
