@@ -8,13 +8,20 @@ const {
 } = require('../webpack/rules');
 
 module.exports = {
+  core: {
+    builder: 'webpack5',
+  },
   stories: [
     '../src/**/*.stories.mdx',
     '../src/**/*.stories.@(js|jsx|ts|tsx)',
   ],
   addons: [
+    '@storybook/addon-a11y',
+    '@storybook/addon-actions',
+    '@storybook/addon-controls',
+    '@storybook/addon-docs',
+    '@storybook/addon-essentials', // takes care of the last few we haven't added globally yet (but should)
     '@storybook/addon-links',
-    '@storybook/addon-essentials',
   ],
   framework: '@storybook/react',
   webpackFinal: async (config, { configType }) => {
