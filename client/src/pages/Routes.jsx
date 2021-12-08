@@ -4,6 +4,7 @@ import { useRoutes } from 'react-router-dom';
 import { Layout } from 'components/Layout';
 import { RegionalStateProvider } from 'state/regional';
 
+import { AdventOfCode2021 } from './advent-of-code-2021';
 import { Home } from './home';
 import { SimpleStateDemo } from './simple-state-demo';
 import { Theming } from './theming';
@@ -36,6 +37,14 @@ export const routes = [
     config: {
       path: '/theming',
       element: <Theming />,
+    },
+  },
+  {
+    nav: true,
+    name: 'AoC',
+    config: {
+      path: '/advent-of-code-2021',
+      element: <AdventOfCode2021 />,
     },
   },
   {

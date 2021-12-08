@@ -24,6 +24,10 @@ const babelLoader = {
 module.exports = {
   mode: 'development',
   devtool: 'inline-source-map',
+  watchOptions: {
+    aggregateTimeout: 200, // default: 200
+    poll: 1000, // default: 1000
+  },
   stats: {
     errorDetails: true,
   },
@@ -84,10 +88,10 @@ module.exports = {
   },
   devServer: {
     // allowedHosts: ['.codesandbox.io'],
-    client: {
-      reconnect: 5,
-      webSocketURL: 'auto://0.0.0.0:0/ws',
-    },
+    // client: {
+    //   reconnect: 5,
+    //   webSocketURL: 'auto://0.0.0.0:0/ws',
+    // },
     // static: {
     //   directory: './dist', // match output.path
     // },

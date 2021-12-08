@@ -17,7 +17,6 @@
   ],
   "editor.selectionHighlight": false,
   "editor.smoothScrolling": true,
-  "editor.wordWrap": "wordWrapColumn",
   "editor.find.autoFindInSelection": true,
   "editor.formatOnPaste": true,
   "editor.minimap.showSlider": "always",
