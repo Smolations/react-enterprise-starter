@@ -44,6 +44,7 @@ export default function Code(props) {
     customStyle = { ...customStyle, ...customStyleDark };
   }
 
+  console.log('[Code] children: %o', children)
 
   return (
     <SyntaxHighlighter
@@ -54,7 +55,7 @@ export default function Code(props) {
       showLineNumbers={block}
       PreTag={block ? 'pre' : 'span'}
     >
-      {children}
+      {children.trim('\n')}
     </SyntaxHighlighter>
   );
 }

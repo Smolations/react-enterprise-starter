@@ -70,6 +70,18 @@ export default function Day1() {
         For example, suppose you had the following report:
       </Paragraph>
       <Code block>
+        199
+        200
+        208
+        210
+        200
+        207
+        240
+        269
+        260
+        263
+      </Code>
+      <Code block>
         {`
         199
         200
