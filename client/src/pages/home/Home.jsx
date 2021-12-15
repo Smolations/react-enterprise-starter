@@ -24,8 +24,8 @@ export default function Home(props) {
     { checked: true, topic: 'Dart-Sass SCSS loader config with token "magic seeding"' },
     { checked: true, topic: 'Live theming with SCSS tokens and css variables' },
     { checked: true, topic: <>Add {code('Code')} support for block-level code</> },
+    { checked: true, topic: <>SPA routing (<Code>react-router-dom@v6</Code> including {code('Outlet')})</> },
 
-    { checked: false, topic: <>SPA routing (<Code>react-router-dom@v6</Code> including {code('Outlet')})</> },
     { checked: false, topic: 'Syntax highlighting for code snippets (with dynamic imports)' },
     { checked: false, topic: 'a11y built into webpack config to address accessibility' },
     { checked: false, topic: 'Custom hooks' },

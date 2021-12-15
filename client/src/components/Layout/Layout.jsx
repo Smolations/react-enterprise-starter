@@ -1,6 +1,7 @@
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
+import { Outlet } from 'react-router-dom';
 
 import { useGlobalState } from 'state/global';
 
@@ -41,7 +42,7 @@ export default function Layout(props) {
       </Header>
 
       <main className="Layout--page-container">
-        {children}
+        <Outlet />
       </main>
     </div>
   );

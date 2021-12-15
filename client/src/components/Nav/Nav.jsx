@@ -20,12 +20,14 @@ export default function Nav(props) {
 
   const classes = classNames('Nav', className);
 
+  // likely need a map, based on routes, to use for menu names..
+  // a generator function of some sort would serve this purpose..
   return (
     <nav className={classes}>
       <ul className="Nav--list">
-        {routes.map((route) => (
-          <li key={route.config.path}>
-            <Link to={route.config.path}>
+        {routes[0].children.map((route) => (
+          <li key={route.path}>
+            <Link to={route.path}>
               {route.name}
             </Link>
           </li>
