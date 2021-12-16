@@ -1,3 +1,4 @@
+@use 'sass:math';
 @use 'sass/vars';
 
 .AdventOfCode2021 {
@@ -9,7 +10,7 @@
 
   li {
     display: inline-block;
-    margin: 0 (vars.$spacing-margin-small / 4);
+    margin: 0 math.div(vars.$spacing-margin-small, 4);
     background-color: vars.$theme-background;
     color: vars.$theme-on-background;
 
