@@ -5,6 +5,7 @@ import { Layout } from 'components/Layout';
 import { RegionalStateProvider } from 'state/regional';
 
 import { AdventOfCode2021, Day } from './advent-of-code-2021';
+import { ErgoTimer } from './ergo-timer';
 import { Home } from './home';
 import { SimpleStateDemo } from './simple-state-demo';
 import { Theming } from './theming';
@@ -19,26 +20,27 @@ export const routes = [
     element: <Layout />,
     children: [
       {
-        nav: true,
         name: 'Home',
         index: true,
         path: '/',
         element: <Home />,
       },
       {
-        nav: true,
         name: 'Typography',
         path: '/typography',
         element: <Typography />,
       },
       {
-        nav: true,
         name: 'Theming',
         path: '/theming',
         element: <Theming />,
       },
       {
-        nav: true,
+        name: 'ErgoTimer',
+        path: '/ergo-timer',
+        element: <ErgoTimer />,
+      },
+      {
         name: 'AoC',
         path: '/advent-of-code-2021',
         element: <AdventOfCode2021 />,
@@ -50,7 +52,7 @@ export const routes = [
         ],
       },
       {
-        nav: true,
+        nav: false,
         name: 'Simple State Demo',
         path: '/simple-state-demo',
         element: (

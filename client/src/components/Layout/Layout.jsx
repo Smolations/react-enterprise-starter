@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 
+import { routes } from 'pages';
 import { useGlobalState } from 'state/global';
 
 import { Header } from '../Header';
@@ -37,7 +38,7 @@ export default function Layout(props) {
         className="Layout--Header"
         heading={<img className="Layout--logo" alt="SmolaGaming logo" src={logo} />}
       >
-        <Nav />
+        <Nav routes={routes} />
         {/* <DropdownNav /> */}
       </Header>
 

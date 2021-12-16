@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import { routes } from 'pages';
+// import { routes } from 'pages';
 import { Link } from '../Link';
 
 import './Nav.scss';
@@ -16,6 +16,7 @@ import './Nav.scss';
 export default function Nav(props) {
   const {
     className,
+    routes,
   } = props;
 
   const classes = classNames('Nav', className);
@@ -25,13 +26,16 @@ export default function Nav(props) {
   return (
     <nav className={classes}>
       <ul className="Nav--list">
-        {routes[0].children.map((route) => (
-          <li key={route.path}>
-            <Link to={route.path}>
-              {route.name}
-            </Link>
-          </li>
-        ))}
+        {routes[0].children
+          .filter((route) => (route.nav !== false))
+          .map((route) => (
+            <li key={route.path}>
+              <Link to={route.path}>
+                {route.name}
+              </Link>
+            </li>
+          ))
+        }
       </ul>
     </nav>
   );
