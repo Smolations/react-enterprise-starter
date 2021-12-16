@@ -9,13 +9,7 @@
       {
         "corejs": 3
       }
-    ],
-    ["prismjs", {
-      "languages": ["javascript", "scss", "jsx"],
-      "plugins": ["line-numbers"]
-      // "theme": "twilight",
-      // "css": true
-    }]
+    ]
   ],
   "presets": [
     [

@@ -6,9 +6,9 @@ import { Page } from 'components/Page';
 import { Paragraph } from 'components/Paragraph';
 
 
-export default function ErgoTimer(props) {
+export default function ErgoTimerPage(props) {
   return (
-    <Page className="ErgoTimer" heading="ErgoTimer">
+    <Page className="ErgoTimerPage" heading="ErgoTimer">
       <Paragraph>
         Finally, a chance to check out <Code>Temporal</Code>. Unfortunately,
         a polyfill is required. Small price to pay for a <Code>Date</Code>

@@ -1,1 +1,1 @@
-export { default as ErgoTimer } from './ErgoTimer';
+export { default as ErgoTimerPage } from './ErgoTimerPage';

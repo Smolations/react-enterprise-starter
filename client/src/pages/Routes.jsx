@@ -5,7 +5,7 @@ import { Layout } from 'components/Layout';
 import { RegionalStateProvider } from 'state/regional';
 
 import { AdventOfCode2021, Day } from './advent-of-code-2021';
-import { ErgoTimer } from './ergo-timer';
+import { ErgoTimerPage } from './ergo-timer';
 import { Home } from './home';
 import { SimpleStateDemo } from './simple-state-demo';
 import { Theming } from './theming';
@@ -38,7 +38,7 @@ export const routes = [
       {
         name: 'ErgoTimer',
         path: '/ergo-timer',
-        element: <ErgoTimer />,
+        element: <ErgoTimerPage />,
       },
       {
         name: 'AoC',
